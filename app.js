@@ -20,6 +20,7 @@ if(process.env.NODE_ENV === 'production'){
 }
 
 const PORT = config.get('port') || 5000;
+const DOMAIN = config.get('baseUrl') ;
 
 async function start() {
     try{
@@ -28,7 +29,7 @@ async function start() {
             useUnifiedTopology: true,
             useFindAndModify: true
         })
-        app.listen(PORT, ()=> console.log(`app been started on port ${PORT}`));
+        app.listen(PORT, ()=> console.log(`app been started on port ${PORT} and domain: ${DOMAIN}`));
     } catch (e) {
         console.log('Server error', e.message)
         process.exit(1);
