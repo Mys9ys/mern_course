@@ -2,5 +2,5 @@
   "port": 80,
   "jwtSecret": "mys9ys kloachnij",
   "mongoUri": "mongodb+srv://mys9ys:32tameda@cluster0.nu9ld.azure.mongodb.net/mern?retryWrites=true&w=majority",
-  "baseUrl": "http://motivawka.online"
+  "baseUrl": "http://motivawka.ru"
 }
